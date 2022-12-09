@@ -1,0 +1,15 @@
+package uk.ac.aston;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import uk.ac.aston.Card;
+
+public class Deck {
+  // A list of cards in the deck
+  private List<Card> cards;
+
+  public Deck() {
+    cards = new ArrayList<>();
+    cards.add(new Card(Ace));
+  }
