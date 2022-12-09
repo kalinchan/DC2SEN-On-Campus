@@ -1,0 +1,15 @@
+package uk.ac.aston;
+
+
+public class Card {
+    // The unique identifier of the card
+    private int id;
+  
+    public Card(int id) {
+      this.id = id;
+    }
+  
+    public int getId() {
+      return id;
+    }
+  }
