@@ -2,14 +2,16 @@ package uk.ac.aston;
 
 
 public class Card {
-    // The unique identifier of the card
-    private int id;
+    // The unique identifier of the card and Suit
+    private String id;
+    private String type;
   
-    public Card(int id) {
+    public Card(String id, String type) {
       this.id = id;
+      this.type = type;
     }
   
-    public int getId() {
+    public String getId() {
       return id;
     }
   }
