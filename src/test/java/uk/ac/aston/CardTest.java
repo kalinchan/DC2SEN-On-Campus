@@ -4,21 +4,23 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CardTest {
 
-    List<Card> cards;
+    ArrayList<Card> cards;
 
     @Before
     public void setUp() {
         cards = new ArrayList<Card>();
-        for (int i = 1; i < 13; i++) {
-            Card ace = new Card(i, "Spade");
-        }
+        cards.addAll(generateCards("Spades"));
+        cards.addAll(generateCards("Clubs"));
+        cards.addAll(generateCards("Diamonds"));
+        cards.addAll(generateCards("Hearts"));
     }
 
     @Test
-    public void testSetup(){
+    public void testSetup() {
     }
 
     public List<Card> generateCards(String suit) {
@@ -29,7 +31,7 @@ public class CardTest {
     }
 
     public String getValue(int num) {
-        switch (num){
+        switch (num) {
             case 1:
                 return "A";
             case 11:
@@ -39,7 +41,7 @@ public class CardTest {
             case 13:
                 return "K";
             default:
-                return ""+num;
+                return "" + num;
         }
     }
 }
