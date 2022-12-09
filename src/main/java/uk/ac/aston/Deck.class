@@ -18,3 +18,9 @@ public class Deck {
   public void shuffle() {
     Collections.shuffle(cards);
   }
+
+  public void viewCards() {
+    for (Card card : cards) {
+      System.out.println(card.getId());
+    }
+  }
