@@ -26,4 +26,9 @@ public class Card {
     public String getSuit() {
         return Suit;
     }
+
+    @Override
+    public String toString() {
+        return id;
+    }
 }
