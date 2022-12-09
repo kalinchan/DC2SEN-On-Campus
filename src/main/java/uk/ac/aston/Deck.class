@@ -4,6 +4,7 @@ package uk.ac.aston;
 import java.util.ArrayList;
 import java.util.List;
 import uk.ac.aston.Card;
+import java.util.Collections;
 
 public class Deck {
   // A list of cards in the deck
@@ -11,5 +12,9 @@ public class Deck {
 
   public Deck() {
     cards = new ArrayList<>();
-    cards.add(new Card(Ace));
+    cards.add(new Card("Ace", "Hearts"));
+  }
+
+  public void shuffle() {
+    Collections.shuffle(cards);
   }
