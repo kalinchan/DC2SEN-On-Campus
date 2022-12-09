@@ -6,8 +6,8 @@ public class Card {
     private String id;
     private String type;
   
-    public Card(String id, String type) {
-      this.id = id;
+    public Card(String value, String suit) {
+      this.id = value + suit;
       this.type = type;
     }
   
