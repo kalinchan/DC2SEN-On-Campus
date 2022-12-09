@@ -6,6 +6,7 @@ public class Card {
     private String Value;
     private String Suit;
     private String id;
+    
   
     public Card(String value, String suit) {
       this.Value = value;
